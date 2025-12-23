@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  weather-bot:
+    build: .
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    env_file:
+      - .env
+    restart: unless-stopped
