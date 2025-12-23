@@ -9,3 +9,31 @@
 3. Создать .env: cp .env.example .env
 4. Заполнить .env своими ключами
 5. Запустить: python src/bot.py
+
+## Запуск docker
+
+### Отладка
+- docker compose down -v
+- docker compose up -d --build
+- docker-compose logs -f
+
+### Запуск
+- docker compose up -d --build
+
+## Структура проекта
+
+- .idea - папка для файлов конфигурации бота
+- Dockerfile - файл Docker
+- docker-compose.yml - файл конфигурации Docker
+- main.py - основной файл логики бота
+- requirements.txt - зависимости проекта
+- LICENSE - файл с авторским правом на проект
+- .env.example - Токен бота
+- pre-commit.yaml - файл pre-commit
+
+## Примеры использования
+
+- Введите команду /start
+- Введите название города на русском или английском
+
+
